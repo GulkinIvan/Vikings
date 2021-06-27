@@ -22,10 +22,22 @@ a {
   cursor: pointer;
 }
 
+ ul {
+  list-style: none;
+}
+
 .container {
-  min-width: 1220px;
-  padding: 0 10px;
+  max-width: 1220px;
+  padding: 100px 10px;
   margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 100px;
+  font-weight: 400;
 }
 
 .header {
@@ -77,6 +89,63 @@ a {
 
 .about__inner {
   display: flex;
-  justify-content: space-between;
 }
 
+.about__info {
+  width: 375px;
+  margin-right: 50px;
+  flex: none;
+}
+
+.about__info-item {
+  margin-bottom: 25px;
+  color: #E5E5E5;
+}
+
+.about__info-item span {
+  display: block;
+}
+
+.about__text-item {
+  margin-bottom: 25px;
+}
+
+.video {
+  background-image: url(../images/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  text-align: right;
+}
+
+.video__text {
+  font-size: 72px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 84px;
+  color: #85CCDC;
+  padding-top: 184px;
+  margin-bottom: 40px;
+}
+
+.video__text span {
+  display: block;
+  padding-right: 285px;
+}
+
+.video__btn {
+  padding-left: 112px;
+  position: relative;
+  margin-right: 230px;
+}
+
+.video__btn::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -40px;
+  left: 0;
+  background-image:  url(../images/youtube.svg);
+}
